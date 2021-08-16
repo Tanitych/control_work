@@ -29,7 +29,6 @@ aside {
 
 html,
 body {
-  height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
@@ -609,10 +608,26 @@ button:focus:not(:focus-visible) {
   color: #4b4b4b;
   font-weight: 800;
 }
-
+main {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 92px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
 footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   background-color: #141414;
   padding: 40px 0px;
+  @media (max-width: 768px) {
+    padding: 25px 0px;
+  }
   .footer_label {
     margin: 0px 0px;
     color: #e0e0e0;
